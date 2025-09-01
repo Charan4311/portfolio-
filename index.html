@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charan Teja Kumpatla - AI Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <span>CT</span>
+                </div>
+            </div>
+            <div class="loading-text">Loading Portfolio...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-logo">
+                    <div class="logo-icon">CT</div>
+                    <span class="brand-text">Charan Teja</span>
+                </div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link" data-text="Home">Home</a>
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#journey" class="nav-link" data-text="Journey">Journey</a>
+                <a href="#expertise" class="nav-link" data-text="Expertise">Expertise</a>
+                <a href="#work" class="nav-link" data-text="Work">Work</a>
+                <a href="#connect" class="nav-link" data-text="Connect">Connect</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-switcher" id="theme-switcher">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="hero-greeting">
+                        <span class="greeting-text">Hello, I'm</span>
+                        <div class="greeting-wave">👋</div>
+                    </div>
+                    <h1 class="hero-name">
+                        <span class="name-part">Charan</span>
+                        <span class="name-part">Teja</span>
+                        <span class="name-part">Kumpatla</span>
+                    </h1>
+                    <div class="hero-roles">
+                        <span class="role-prefix">I'm a</span>
+                        <div class="role-slider">
+                            <div class="role-item active">AI Enthusiast</div>
+                            <div class="role-item">Python Developer</div>
+                            <div class="role-item">Backend Engineer</div>
+                            <div class="role-item">Problem Solver</div>
+                        </div>
+                    </div>
+                    <p class="hero-description">
+                        Passionate Computer Science student specializing in Artificial Intelligence, 
+                        crafting innovative solutions with Python and modern technologies.
+                    </p>
+                    <div class="hero-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Andhra Pradesh, India</span>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" id="download-cv">
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                        <button class="btn btn-outline" id="view-work">
+                            <i class="fas fa-eye"></i>
+                            <span>View Work</span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Charan4311" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/charan-kumpatla-350141302" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:charannaidukumpatla104@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+919182242104" class="social-link">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="profile-container">
+                        <div class="profile-card">
+                            <div class="profile-image-wrapper">
+                                <div class="profile-image">
+                                    <img src="profile.jpg" alt="Charan Teja Kumpatla" class="profile-img">
+                                </div>
+                            </div>
+                            <div class="profile-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="4">0</div>
+                                    <div class="stat-label">Years Study</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="15">0</div>
+                                    <div class="stat-label">Projects</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="7">0</div>
+                                    <div class="stat-label">Technologies</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll to explore</div>
+                <div class="scroll-arrow">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-head"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">Get to know me</div>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-subtitle">Passionate about creating intelligent solutions</div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I'm a dedicated Computer Science student at KIET, specializing in Artificial Intelligence. 
+                            My journey in technology is driven by curiosity and a passion for solving complex problems 
+                            through innovative solutions.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h3>What I Do</h3>
+                        <p>
+                            As an intermediate-level Python enthusiast, I focus on backend development and AI applications. 
+                            I enjoy exploring machine learning algorithms, building web applications, and contributing to 
+                            open-source projects that make a difference.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h3>My Vision</h3>
+                        <p>
+                            I believe in the power of technology to transform lives. My goal is to develop AI-powered 
+                            solutions that are not only technically sound but also accessible and beneficial to society.
+                        </p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.Tech CSE (AI) Student</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Python & Backend Developer</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Leader & Collaborator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control close"></span>
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                            </div>
+                            <div class="window-title">about_me.py</div>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="code-text">
+                                    <span class="keyword">class</span> 
+                                    <span class="class-name">CharanTeja</span>:
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="keyword">def</span> 
+                                    <span class="function">__init__</span>(self):
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="string">"Charan Teja Kumpatla"</span>
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="string">"AI Developer"</span>
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">5</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;self.location = <span class="string">"Andhra Pradesh"</span>
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">6</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;self.skills = [<span class="string">"Python"</span>, <span class="string">"AI"</span>, <span class="string">"ML"</span>]
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">7</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;self.passion = <span class="string">"Building the future"</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section (Education) -->
+    <section id="journey" class="journey">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">My path</div>
+                <h2 class="section-title">Educational Journey</h2>
+                <div class="section-subtitle">Building knowledge step by step</div>
+            </div>
+            <div class="journey-timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item" data-year="2023-2027">
+                    <div class="timeline-marker">
+                        <div class="marker-inner"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Current</div>
+                        <h3>B.Tech in Computer Science & Engineering (AI)</h3>
+                        <h4>KIET - Kakinada Institute of Engineering & Technology</h4>
+                        <div class="timeline-meta">
+                            <span class="timeline-duration">2023 - 2027</span>
+                            <span class="timeline-grade">CGPA: 7.8</span>
+                        </div>
+                        <p>Specializing in Artificial Intelligence with focus on machine learning, deep learning, and intelligent systems development.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-chip">Artificial Intelligence</span>
+                            <span class="skill-chip">Machine Learning</span>
+                            <span class="skill-chip">Data Structures</span>
+                            <span class="skill-chip">Algorithms</span>
+                            <span class="skill-chip">Python Programming</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2020-2022">
+                    <div class="timeline-marker">
+                        <div class="marker-inner"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Completed</div>
+                        <h3>Intermediate Education (MPC)</h3>
+                        <h4>VSM Junior College</h4>
+                        <div class="timeline-meta">
+                            <span class="timeline-duration">2020 - 2022</span>
+                            <span class="timeline-grade">Score: 718/1000</span>
+                        </div>
+                        <p>Focused on Mathematics, Physics, and Chemistry, building strong analytical and problem-solving foundations.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-chip">Mathematics</span>
+                            <span class="skill-chip">Physics</span>
+                            <span class="skill-chip">Chemistry</span>
+                            <span class="skill-chip">Analytical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section (Skills) -->
+    <section id="expertise" class="expertise">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">What I know</div>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-subtitle">Technologies and skills I work with</div>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-category">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expertise-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Flask</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expertise-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Machine Learning</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Computer Vision</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Data Analysis</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expertise-category">
+                    <div class="category-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="soft-skills">
+                        <div class="soft-skill-item">
+                            <i class="fas fa-crown"></i>
+                            <span>Leadership</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Team Work</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Innovation</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section (Projects) -->
+    <section id="work" class="work">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">My creations</div>
+                <h2 class="section-title">Featured Work</h2>
+                <div class="section-subtitle">Projects that showcase my skills and passion</div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Charan4311" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Hand Gesture Recognition System</h3>
+                            <div class="project-status">Featured</div>
+                        </div>
+                        <p>An intelligent web application that uses machine learning to recognize hand gestures and suggest corresponding actions. Built with computer vision algorithms and real-time processing capabilities.</p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-eye"></i>
+                                <span>Real-time Recognition</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-brain"></i>
+                                <span>ML-Powered</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag flask">Flask</span>
+                            <span class="tech-tag html">HTML</span>
+                            <span class="tech-tag css">CSS</span>
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag ml">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Charan4311" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Data Analytics Dashboard</h3>
+                            <div class="project-status">In Progress</div>
+                        </div>
+                        <p>A comprehensive dashboard for data visualization and analytics, featuring interactive charts and real-time data processing capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag node">Node.js</span>
+                            <span class="tech-tag mongo">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Charan4311" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>AI Chatbot Assistant</h3>
+                            <div class="project-status">Planned</div>
+                        </div>
+                        <p>An intelligent chatbot powered by natural language processing, designed to provide helpful responses and automate customer support.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag nlp">NLP</span>
+                            <span class="tech-tag api">REST API</span>
+                            <span class="tech-tag docker">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Section (Contact) -->
+    <section id="connect" class="connect">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">Let's talk</div>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-subtitle">Ready to collaborate on your next project</div>
+            </div>
+            <div class="connect-content">
+                <div class="connect-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email Me</h4>
+                            <p>charannaidukumpatla104@gmail.com</p>
+                            <a href="mailto:charannaidukumpatla104@gmail.com" class="info-link">Send Email</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Call Me</h4>
+                            <p>+91 91822 42104</p>
+                            <a href="tel:+919182242104" class="info-link">Make Call</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>LinkedIn</h4>
+                            <p>Professional Network</p>
+                            <a href="https://linkedin.com/in/charan-kumpatla-350141302" class="info-link" target="_blank">Connect</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>GitHub</h4>
+                            <p>Code Repository</p>
+                            <a href="https://github.com/Charan4311" class="info-link" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="connect-form">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="firstName" name="firstName" required>
+                                <label for="firstName">First Name</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" name="lastName" required>
+                                <label for="lastName">Last Name</label>
+                                <div class="form-line"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Sending...
+                            </span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <div class="logo-icon">CT</div>
+                        <span class="brand-text">Charan Teja Kumpatla</span>
+                    </div>
+                    <p>Building the future with AI and innovation</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Navigation</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#journey">Journey</a>
+                        <a href="#expertise">Expertise</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Work</h4>
+                        <a href="#work">Projects</a>
+                        <a href="#connect">Contact</a>
+                        <a href="#" id="footer-resume">Resume</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/Charan4311" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/charan-kumpatla-350141302" target="_blank">LinkedIn</a>
+                        <a href="mailto:charannaidukumpatla104@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Charan Teja Kumpatla. Crafted with 💻 and ❤️</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Charan4311" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/charan-kumpatla-350141302" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:charannaidukumpatla104@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
